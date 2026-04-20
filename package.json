@@ -1,0 +1,13 @@
+{
+  "name": "sparsh-main",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "frontend": "cd frontend && npm start",
+    "backend": "cd backend && python app.py"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
